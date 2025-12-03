@@ -8,7 +8,7 @@ export default function ProductCard({ product }) {
   const handleContactWhatsApp = () => {
     const message = `Hi! I'm interested in buying "${product.name}". Price: ₹${product.offerPrice} (Original: ₹${product.originalPrice}). Please provide more details.`
     const encodedMessage = encodeURIComponent(message)
-    const whatsappURL = `https://wa.me/?text=${encodedMessage}`
+    const whatsappURL = `https://wa.me/9061306799?text=${encodedMessage}`
     window.open(whatsappURL, "_blank")
   }
 
